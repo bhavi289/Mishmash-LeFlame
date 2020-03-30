@@ -1,0 +1,65 @@
+<!--
+  Generated template for the CommentsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="headerColor">  
+  </ion-navbar>
+  <ion-card class="cardFeesDetails">
+    <div class="profileImage" style="background:url('../assets/imgs/user.png') center / cover no-repeat;"> 
+  </div>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <!-- <strong>Student Name</strong> -->
+            <p>Doubt Thread</p> 
+        </ion-col> 
+      </ion-row>
+    </ion-grid> 
+  </ion-card-content>
+  </ion-card>
+</ion-header>
+ <ion-content class="pane">
+  <div>
+    <ion-card class="notice-board" >
+      <ion-card-header>
+       <h2> <b>{{doubt_title}}</b> </h2>
+      </ion-card-header>
+      <ion-card-content>
+        <h2><b>{{doubt_description}}</b> </h2>
+      </ion-card-content>
+    <ion-row>
+      <ion-col col-8>
+          <ion-note item-start class="note note-ios">
+          </ion-note>
+      </ion-col>
+    </ion-row>
+    </ion-card>
+
+    <ion-card *ngFor="let comment of comments" class="notice-board" >
+      <ion-card-header>
+        {{comment.first_name}} {{comment.last_name}}
+      </ion-card-header>
+      <ion-card-content>
+        {{comment.text}}
+      </ion-card-content>
+    <ion-row>
+      <ion-col col-8>
+          <ion-note item-start class="note note-ios">
+            {{comment.last_updated}}
+          </ion-note>
+      </ion-col>
+    </ion-row>
+    </ion-card>
+
+  </div>
+  <ion-item>
+    <ion-label floating>Add Comment</ion-label>
+    <ion-input type="text" name="comment" [(ngModel)]="comment"></ion-input>
+  </ion-item>
+  <button ion-button (click)="submit()">Comment</button>
+ </ion-content>
+

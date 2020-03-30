@@ -1,0 +1,74 @@
+<ion-header>
+    <ion-navbar color="headerColor">  
+      
+    </ion-navbar>
+    <ion-card class="cardFeesDetails">
+      <div class="profileImage" style="background:url('../assets/imgs/user.png') center / cover no-repeat;"> 
+    </div>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+            <!-- <strong>Student Name</strong> -->
+              <p>Request Meeting for {{course_name}}</p> 
+          </ion-col> 
+        </ion-row>
+      </ion-grid> 
+    </ion-card-content>
+    </ion-card>
+  </ion-header> 
+  <ion-content class="pane">
+  <ion-card class="exams-things">
+  <ion-list>
+      <ion-card *ngFor="let meeting of meetings" class="notice-board" >
+          <ion-card-header>
+            {{meeting.title}} 
+          </ion-card-header>
+          <ion-card-content>
+            <span style="color:blue">{{meeting.body}}</span><br>
+            _________________<br>
+            <span style="color: green" *ngIf="meeting.status=='APPROVED'">
+            {{meeting.prof_response}}
+            </span>
+            <span style="color: red" *ngIf="meeting.status=='REJECTED'">
+              {{meeting.prof_response}}
+              </span>
+          </ion-card-content>
+        <ion-row>
+          <ion-col col-8>
+              <ion-note item-start class="note note-ios">
+                {{meeting.status}}
+              </ion-note>
+          </ion-col>
+        </ion-row>
+        </ion-card>
+  <!-- <ion-item *ngFor="let meeting of meetings" >
+    <ion-icon name="md-paper" item-start class="document"></ion-icon>
+    <h2>{{meeting.title}}</h2>
+    <h3>
+      {{meeting.body}}
+    </h3>
+  </ion-item> -->
+  </ion-list>
+  </ion-card>
+  
+  </ion-content>
+  <ion-footer>
+  <ion-card class="uploadform"> 
+      <form #meetingForm="ngForm" novalidate> 
+      <div>
+      <ion-item>
+        <ion-label floating>Meeting Title</ion-label>
+        <ion-input type="text" name="meeting_title" [(ngModel)]="formData.meeting_title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Meeting Description</ion-label>
+        <ion-input type="text" name="meeting_description" [(ngModel)]="formData.meeting_description"></ion-input>
+      </ion-item>
+      </div> 
+      <ion-item class="buttonset"> 
+      <button ion-button (click)="submit(meetingForm)">Request Meeting</button>
+      </ion-item> 
+      </form>
+  </ion-card> 
+  </ion-footer>

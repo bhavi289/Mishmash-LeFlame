@@ -1,0 +1,168 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+//Themeing
+.colorThemePurple{
+	background:#9a72ca;
+}
+.pane {
+       background-color: #e6eaed;
+    padding: 0 12px 0 12px;
+}
+//ion-navbar.toolbar{padding-bottom: 150px}
+
+//default style customize
+.ion-header:after,.header-md:after{
+    display: none !important;
+    background: none;
+}
+.menu-button{
+	display: inline-block;
+    vertical-align: middle;
+    float: left;
+}
+ .ion-title {
+ .toolbar-title{
+	text-transform:uppercase;
+ 	}
+ }
+//Menu Styles
+.profile_section{
+	    padding: 5px 10px 10px 10px;
+	    background: #a4c2f2;
+        background: -moz-linear-gradient(-45deg, #a4c2f2 0%, #a4c2f2 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, #a4c2f2), color-stop(100%, #a4c2f2));
+        background: -webkit-linear-gradient(-45deg, #a4c2f2 0%, #a4c2f2 100%);
+        background: -o-linear-gradient(-45deg, #a4c2f2 0%, #a4c2f2 100%);
+        background: -ms-linear-gradient(-45deg, #a4c2f2 0%, #a4c2f2 100%);
+        background: linear-gradient(135deg, #a4c2f2 0%, #a4c2f2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a98201', endColorstr='#e4af00', GradientType=1 );
+	    color: #fff;
+    .list{
+        color: #fff;
+            margin-bottom: 0;
+	    .item {
+            border: none;
+	        background: none;
+		    color: #fff;
+		    padding: 0;
+		    .label{
+		    h2{
+			    font-size: 15px;
+			    font-weight: normal;
+		    }
+		    p{
+		    color: #fff;    margin-top: 3px;
+		    font-size: 11px;
+		    font-weight: normal;
+		    }
+		    }
+	    }
+    }
+    }
+.admin-sidemenu {
+    .list {
+        margin: -1px 0 0;
+    }
+    .item-divider {
+        background: #eef3f6;
+        font-size: 13px;
+        font-weight: 600;
+        color: #282828;
+        .item-inner{
+        .input-wrapper{
+	        .label{
+			    text-transform: uppercase;
+			    font-weight: normal;
+			    }
+	        }
+        }
+    }
+    .item {
+        font-size: 13px;
+        font-weight: 600;
+        border-bottom: 1px dashed #d0d0d0;
+        color: #4c4c4c;
+        cursor: pointer;
+        .item-inner {
+            border: none;
+            .label {
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+        &.item-block {
+            .item-inner {
+                padding-left:0;
+                ion-icon{
+                font-size:27px;
+                vertical-align: middle;
+                font-weight:600;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}
+.profile_section{
+    .buttonSet{
+        margin-top: 0;
+        margin-left:50px;
+        .button{
+            box-shadow: none;
+            width: 40px;
+            margin: 0;
+            height: 25px;
+            border-radius: 3px;
+            &.tickYes{
+                background: #fff;
+                color:#979797
+            }
+             &.tickNo{
+                background: #a4c2f2;
+                color: #a4c2f2;
+                margin-right:7px;
+            }
+            ion-icon{
+                font-size: 20px;
+            }
+        }
+   }
+}
+.holiday{
+    border: none;
+    background: #a4c2f2;
+    margin: 0;
+    border-radius: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+// For all modals open within 767px devices
+@media (max-width: 767px) {
+    ion-modal.show-page {
+        background-color: #0000006e;
+        text-align: -webkit-center;
+    }
+
+    .modal-wrapper {
+        width: 90%;
+        border-radius: 5px;
+        height: 65%;
+        margin-top: 20%;
+    }
+}

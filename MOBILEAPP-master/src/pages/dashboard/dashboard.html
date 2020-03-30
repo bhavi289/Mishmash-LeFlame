@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar color="headerColor">  
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+  <ion-card class="cardFeesDetails">
+   <div class="profileImage" style="background:url('../assets/imgs/user.png') center / cover no-repeat;"> 
+  </div>
+  <ion-card-content>
+	  <ion-grid>
+	  	<ion-row>
+	  		<ion-col col-12>
+	  			<strong>{{name}}</strong>
+		  		 <p>Indian Institute Of Information Technology, <strong>Sri City</strong></p> 
+	  		</ion-col> 
+	  	</ion-row>
+	  </ion-grid> 
+	</ion-card-content>
+	</ion-card>
+</ion-header> 
+<ion-content class="pane"> 
+<ion-list class="feesdetailsList">
+<ion-card (click)="quiz()">
+  <button ion-item > 
+  <ion-avatar item-start class="colorPinkBg">
+  	<ion-icon name="ios-paper-outline"></ion-icon>
+  </ion-avatar>
+    <h2>Quiz</h2> 
+  </button>
+</ion-card>
+<ion-card (click)="meetings()">
+  <button ion-item> 
+  <ion-avatar item-start class="colorPinkBg">
+    <ion-icon name="md-contacts"></ion-icon>
+  </ion-avatar>
+    <h2>Meetings</h2> 
+  </button>
+</ion-card>
+<ion-card (click)="doubts()">
+  <button  ion-item> 
+  <ion-avatar item-start class="colorPinkBg">
+  	<ion-icon name="ios-hand-outline"></ion-icon>
+  </ion-avatar>
+    <h2>Doubts</h2> 
+  </button>
+</ion-card>
+<ion-card (click)="results()">
+  <button  ion-item> 
+  <ion-avatar item-start class="colorPinkBg">
+  	<ion-icon name="ios-book"></ion-icon>
+  </ion-avatar>
+    <h2>Results</h2> 
+  </button>
+</ion-card>
+
+
+
+</ion-list>
+</ion-content>

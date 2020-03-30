@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar color="headerColor">  
+    
+  </ion-navbar>
+  <ion-card class="cardFeesDetails">
+    <div class="profileImage" style="background:url('../assets/imgs/user.png') center / cover no-repeat;"> 
+  </div>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <!-- <strong>Student Name</strong> -->
+            <p>Ask Doubts for {{course_name}}</p> 
+        </ion-col> 
+      </ion-row>
+    </ion-grid> 
+  </ion-card-content>
+  </ion-card>
+</ion-header> 
+<ion-content class="pane">
+<ion-card class="exams-things">
+<ion-list>
+<ion-item *ngFor="let doubt of doubts" (click)="comment(doubt.id, doubt.title, doubt.description)">
+  <ion-icon name="md-paper" item-start class="document"></ion-icon>
+  <h2>{{doubt.title}}</h2>
+  <h3>
+    {{doubt.description}}
+  </h3>
+</ion-item>
+</ion-list>
+</ion-card>
+<!--
+<div class="aligner">
+<div class="aligner-item">
+    <div class="no-data-image">
+        <img *ngIf="!uploaded" [src]="">
+        <img *ngIf="uploaded" [src]="myphoto">
+
+    </div>
+    <div *ngIf="!uploaded" class="no-data-message">
+        <strong>Uploaded Image Will Appear Hear </strong>
+        <p>Please Upload an Image For Preview</p>
+    </div>
+    <div *ngIf="uploaded" class="no-data-message">
+        <strong>Woo Hoo! Successfully Uploaded.</strong>
+        <p>Never Lose anything again :)</p>
+    </div>
+</div>
+</div>
+-->
+
+</ion-content>
+<ion-footer>
+<ion-card class="uploadform"> 
+    <form #doubtForm="ngForm" novalidate> 
+    <div>
+    <ion-item>
+      <ion-label floating>Doubt Title</ion-label>
+      <ion-input type="text" name="doubt_title" [(ngModel)]="formData.doubt_title"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Doubt Description</ion-label>
+        <ion-input type="text" name="doubt_description" [(ngModel)]="formData.doubt_description"></ion-input>
+      </ion-item>
+    </div> 
+    <ion-item class="buttonset"> 
+    <button ion-button (click)="submit(doubtForm)">Submit Doubt</button>
+    </ion-item> 
+    </form>
+</ion-card> 
+</ion-footer>

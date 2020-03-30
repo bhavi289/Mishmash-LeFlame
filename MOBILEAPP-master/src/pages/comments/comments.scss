@@ -1,0 +1,120 @@
+page-comments {
+    .header {
+	    background: #649ffc;
+            height: 125px;
+}
+.header-ios{
+	height: 135px;
+}
+.header-md{
+	    height: 135px;
+}
+.cardFeesDetails{
+
+	border-radius: 8px;
+    -webkit-box-shadow: 0 3px 8px 3px rgba(194, 194, 194, 0.2);
+    box-shadow: 0 3px 8px 3px rgba(194, 194, 194, 0.2);
+	overflow:visible;
+	position:relative;
+	.card-content{
+		 padding: 10px;
+    text-align: center;
+	    .grid{
+	        margin-top: 10px;
+		    .row{
+			    .col{
+			        padding: 0;
+			    p{
+			        color: #868686;
+    				font-size: 12px;
+    				strong{
+    				font-size: 11px;
+    				color: #717171;
+    				}
+			    }
+			    strong{
+			        color: #373737;
+    				font-size: 16px;
+			    } 
+		    }
+	    }
+	  }
+	}
+
+    .profileImage{
+       position: absolute;
+    width: 55px;
+       -webkit-box-shadow: 0 5px 13px 8px rgba(194, 194, 194, 0.4);
+    box-shadow: 0 5px 13px 8px rgba(194, 194, 194, 0.4);
+    height: 55px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    top: -35px;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 1px solid #c4c4c4;
+    }
+}
+    .item-md {
+		padding-left: 0px;
+		padding-right: 0;
+		position: relative;
+	}
+	.toolbar-background {
+		border:none !important;
+	}
+	.card { 
+		&.notice-board{
+			border-radius: 6px;
+		   -webkit-box-shadow: 0 6px 4px 3px rgba(224, 224, 224, 0.4);
+			box-shadow: 0 6px 4px 3px rgba(224, 224, 224, 0.4);
+			.note{
+				display: block;
+				color: #888888;
+				font-weight: normal;
+				margin-bottom: 12px;
+				font-size: 13px;
+				margin-left: 5%;
+			}
+			.notem{
+				display: block;
+				color: #6227d1;
+				font-weight: normal;
+				margin-bottom: 12px;
+				font-size: 13px;
+				margin-left: 5%;
+			}
+			.card-header{
+			    font-size: 14px;
+			    color: #242424;
+			    font-weight: 600;
+				.note{
+					display: block;
+				    color: #888888;
+				    font-weight: normal;
+				    margin-bottom: 12px;
+				    font-size: 13px;
+				}
+			}
+			.card-content{
+			    font-size: 13px;
+    			color: #242424;
+    			.regards{
+    			    margin-top: 25px;
+    			    span{
+	    			    display:block;
+	    			    color:#919191;
+	    			    font-size: 13px;
+	    			    margin-bottom: 3px;
+    			    }
+    			    strong{
+    			        display: block;
+					    font-size: 13px;
+					    color: #242424;
+    			    }
+    			}
+			}
+		}
+	}
+}

@@ -1,0 +1,95 @@
+page-login {
+    .loginForm{ 
+        background:  #488aff url(../assets/imgs/course_1.png) no-repeat top center;
+        background-size: 80%;
+        position: relative;
+        .scroll-content{
+            overflow-y: hidden;
+        }
+        .formInformation{       
+            position: absolute ; 
+            width: 100%;
+            margin: auto;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        .createduserFrom{
+            margin: 0 auto 38px;
+            background: #fff;
+            float: none;
+            width: 94%;
+            box-shadow: rgb(62, 84, 125) 0px 3px 28px 10px;
+            -webkit-box-shadow: rgb(62, 84, 125) 0px 3px 28px 10px;
+            padding: 20px;
+            border-radius: 5px;
+            .item-block{
+               padding-left: 0;
+               font-weight: 600;
+            .text-input{
+               margin-right: 5px;
+               border: none;
+               color: #2d2d2d;
+               font-size: 13px;
+                 }
+             }
+        h3{
+           
+            font-size: 14px;
+            color: #b7b7b7;
+            font-weight: normal;
+            // @extend .upperCase;
+        }
+        .item{
+        border-bottom: 1px solid #c8c7cc; 
+        .item-inner{
+        border-bottom:none; 
+        }
+        ion-label.label{
+            font-size: 12px;
+            color: #949494;
+        }
+    }
+    .buttonSet{
+    .link-forgot{
+        background: none;
+        color: #dc6868;
+        text-transform: capitalize;
+        box-shadow: none;
+        border: none;
+        font-style: italic;
+        font-size: 13px;
+      
+    }
+    .new-account{
+        background: #154caf;
+        border-radius: 4px;
+        font-size: 15px;
+        font-weight: normal;
+        height: 40px;
+        // @extend .upperCase;
+        }
+    }
+}
+    .formDescription{
+    margin: 0px 30px 0px 30px;
+    text-align: center;
+        button{
+            background: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            border: none;
+            border-radius: 0;
+            height: 22px;
+            box-shadow: none;    font-size: 14px;
+            text-transform:  none;
+        }
+        p{
+            color: #a5b4c9;
+            font-size: 13px;
+            font-weight: 400;
+            }
+         }
+       }       
+    } 
+}
+ 

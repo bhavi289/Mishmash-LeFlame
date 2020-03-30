@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar color="headerColor">  
+      
+    </ion-navbar>
+    <ion-card class="cardFeesDetails">
+      <div class="profileImage" style="background:url('../assets/imgs/user.png') center / cover no-repeat;"> 
+    </div>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+            <!-- <strong>Student Name</strong> -->
+              <p>Results for {{course_name}}</p> 
+          </ion-col> 
+        </ion-row>
+      </ion-grid> 
+    </ion-card-content>
+    </ion-card>
+  </ion-header> 
+  <ion-content class="pane">
+      <ion-list>
+          <ion-item *ngFor="let result of results; let i=index"> 
+          <ion-avatar item-start>
+           <img *ngIf="result.marks_obtained >= result.conduct_quiz.quiz.pass_marks" src="../assets/imgs/pass.png">
+           <img *ngIf="result.marks_obtained < result.conduct_quiz.quiz.pass_marks" src="../assets/imgs/fail.png">
+          </ion-avatar>
+         <h2>{{result.conduct_quiz.quiz.title}} ({{result.conduct_quiz.unique_quiz_id}})</h2>
+         <h3>
+            {{result.conduct_quiz.conduction_date | slice:0:10}}
+          </h3>
+         <ion-note item-end class="note users-on count note-ios"> 
+            {{result.marks_obtained}} / {{result.conduct_quiz.quiz.max_marks}}
+         <!-- <img src="../assets/imgs/course_{{(i+1)%4}}.png"  /> -->
+         <!-- <img src="../assets/imgs/course_{{(i+1)%4}}.png" class="activeimg" />   -->
+         </ion-note> 
+         </ion-item>
+      </ion-list>
+  </ion-content>

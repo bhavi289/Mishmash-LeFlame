@@ -1,0 +1,1 @@
+{"version":3,"file":"flash-card.js","sourceRoot":"","sources":["flash-card.ts"],"names":[],"mappings":";;;;;;;;;AAAA,OAAO,EAAE,SAAS,EAAE,KAAK,EAAE,MAAM,eAAe,CAAC;AAMjD;IAIE;IAEA,CAAC;IAJmB;QAAnB,KAAK,CAAC,WAAW,CAAC;;wDAAmB;IAF3B,kBAAkB;QAJ9B,SAAS,CAAC;YACT,QAAQ,EAAE,YAAY;YACtB,WAAW,EAAE,iBAAiB;SAC/B,CAAC;;OACW,kBAAkB,CAQ9B;IAAD,yBAAC;CAAA,AARD,IAQC;SARY,kBAAkB"}

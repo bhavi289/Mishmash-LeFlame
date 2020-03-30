@@ -1,0 +1,117 @@
+page-dashboard {
+.header {
+	    background: #649ffc;
+            height: 125px;
+}
+.header-ios{
+	height: 135px;
+}
+.header-md{
+	    height: 135px;
+}
+.cardFeesDetails{
+
+	border-radius: 8px;
+    -webkit-box-shadow: 0 3px 8px 3px rgba(194, 194, 194, 0.2);
+    box-shadow: 0 3px 8px 3px rgba(194, 194, 194, 0.2);
+	overflow:visible;
+	position:relative;
+	.card-content{
+		 padding: 10px;
+    text-align: center;
+	    .grid{
+	        margin-top: 10px;
+		    .row{
+			    .col{
+			        padding: 0;
+			    p{
+			        color: #868686;
+    				font-size: 12px;
+    				strong{
+    				font-size: 11px;
+    				color: #717171;
+    				}
+			    }
+			    strong{
+			        color: #373737;
+    				font-size: 16px;
+			    } 
+		    }
+	    }
+	  }
+	}
+
+    .profileImage{
+       position: absolute;
+    width: 55px;
+       -webkit-box-shadow: 0 5px 13px 8px rgba(194, 194, 194, 0.4);
+    box-shadow: 0 5px 13px 8px rgba(194, 194, 194, 0.4);
+    height: 55px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    top: -35px;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 1px solid #c4c4c4;
+    }
+}
+.feesdetailsList{
+		.colorPinkBg{
+			line-height: 40px;
+			background: #f3a3ac;
+		    border-radius: 100%;
+		    color: #fff;
+		    height: 40px;
+    		width: 40px;
+		    text-align: center;
+		}
+	    &.list-wp{
+	        padding-top: 20px;
+	    }
+	    &.list-ios{
+	          padding-top: 31px;
+	    }
+	    &.list-md{
+	           padding-top: 25px;
+	    }
+	    .card{
+	    border-radius: 4px;
+	    box-shadow: none;	 
+	        margin-top: 0;
+    margin-bottom: 7px;   
+		.item{
+		    border: none;
+		    border-radius: 0;
+		    padding-top: 5px;
+    		padding-bottom: 5px;
+	    h2{
+    	    font-weight: 400;
+		    color: #636363;
+		        font-size: 14px;
+	    }  
+	    .button{
+	    color: #fff;
+	    width: 60px;
+	    font-size: 12px;
+	    text-transform: capitalize;
+	    &.cashBtn{
+	    background:#ff8e8d;
+	    }
+	    &.chequeBtn{
+	    background:#41aafb;
+	    }
+	    }
+	    .item-inner{
+	        border: none;
+	    }
+	    &:first-child{
+	    	border:none;
+	    }
+	     &:last-child{
+	    	border:none;
+	    }
+		}
+	}
+}
+}
